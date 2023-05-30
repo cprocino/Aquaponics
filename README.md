@@ -21,7 +21,16 @@ our planning was rather simple as the construction of our project was largely al
 
 
 
-![Screenshot 2023-05-30 144333](https://github.com/cprocino/Aquaponics/assets/71406784/925c8a53-bd52-4210-a16a-6adc7ba785c8)< size="10">
+<img src="https://github.com/cprocino/Aquaponics/assets/71406784/925c8a53-bd52-4210-a16a-6adc7ba785c8" height="250">
+
+our planning was slightly skewed by our knowledge of our lack of knowledge in PID 
+for the first week after we desided on our project we would create the skeleton of our project using the fish tank and a few other household and lab idems.
+the rest of the time we would spend trying to figure out how we would PID the project and how the new valves and pumps could be controlled with arduinos. 
+
+
+
+
+
 
 
 

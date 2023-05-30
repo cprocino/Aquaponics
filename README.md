@@ -17,8 +17,11 @@ This project was based around the idea of PID and our task was to build a system
 
 
 ## planning 
-our planning 
-![Screenshot 2023-05-30 144333](https://github.com/cprocino/Aquaponics/assets/71406784/925c8a53-bd52-4210-a16a-6adc7ba785c8)
+our planning was rather simple as the construction of our project was largely already made. The below picture is our initial very rough sketch of the basis of our project, it will make much more sense once one views the completed project. The sketch is faithful to our final project with the exception of the monitored tank being suspended instead of laying on some wood on the bottom 
+
+
+
+![Screenshot 2023-05-30 144333](https://github.com/cprocino/Aquaponics/assets/71406784/925c8a53-bd52-4210-a16a-6adc7ba785c8)< size="10">
 
 
 

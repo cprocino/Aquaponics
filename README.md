@@ -49,9 +49,11 @@ This is a picture of our small monitiered tank and the valve we used to affect f
 
 <img src="https://github.com/cprocino/Aquaponics/assets/71406784/99353b00-bdc5-4b77-abb7-96275dfcf8e0" height="250">
 
-
+this is the tank that encloses the whole system
 
 <img src="https://github.com/cprocino/Aquaponics/assets/71406784/e11dadc4-419e-4fe5-b15d-2721fd8b6252" height="250">
+
+this is our final pump, the one we first used was to strong and the valve could not keep up with the flow
 
 
 

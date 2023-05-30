@@ -55,8 +55,9 @@ this is the tank that encloses the whole system
 
 this is our final pump, the one we first used was to strong and the valve could not keep up with the flow
 
+<img src="https://github.com/cprocino/Aquaponics/assets/71406784/ceef106a-32a8-4821-ae7c-09107d3ca763" height="250">
 
-
+this is the whole project assembled with out the water or plants. 
 
 ## wiring 
 

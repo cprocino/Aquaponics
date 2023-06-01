@@ -82,6 +82,7 @@ This is the final pump we desided on, we got it from disasembling a small fishta
 
 <img src="https://github.com/Ncrawfo72/aquaponics/blob/main/images/aquaponics%20working.gif" height="450">
 
+this is a video of it working.
 
 
 ## Wiring 

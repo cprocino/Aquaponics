@@ -11,12 +11,12 @@
 ---
 
 
-## intro
+## Intro
 This project was based around the idea of PID and our task was to build a system using PID to keep one variable in the system constant. We decided to do a aquaponics system with the controlled variable being the water level of the plant tank. Our system would be relatively simple, the entire system would be essentially enclosed inside a large 20 gallon fish tank. The tank would be partially filled with water that would act as a reservoir their would then be a smaller water tank inside that would have its water level controlled via a pump and valve using PID.
 
 
 
-## planning 
+## Planning 
 our planning was rather simple as the construction of our project was largely already made. The below picture is our initial very rough sketch of the basis of our project, it will make much more sense once one views the completed project. The sketch is faithful to our final project with the exception of the monitored tank being suspended instead of laying on some wood on the bottom 
 
 
@@ -34,7 +34,7 @@ the rest of the time we would spend trying to figure out how we would PID the pr
 
 
 
-## visuals
+## Visuals
 <img src="https://github.com/cprocino/Aquaponics/assets/71406784/86a0e908-96a6-4de7-9fcf-735391fd2e29" height="300">
 
 This is a partial picture of our wiring that shows the most important parts ( see wiring diagram for full wiring) 
@@ -59,12 +59,12 @@ this is our final pump, the one we first used was to strong and the valve could 
 
 this is the whole project assembled with out the water or plants. 
 
-## wiring 
+## Wiring 
 
 
   
 
-## code
+## Code
 For our code we had two renditions, one was a simplistic non-PID version that kindof worked it is as follows:
 
 
@@ -74,7 +74,7 @@ the other was the PID that was in our final version it is as follows:
 
 
 
-## reflection  
+## Reflection  
 
 This project was interesting in that no single part of it was extremely difficult but we needed to learn many different systems before we could complete the project; There was the Pumps that we needed pair with the right valves so that we could properly create the final flow system, the PID code that we need to familiarize ourselves with and the ultrasonic sensors that we were told didn't work on water(they do). A lot of the difficulty of this project was learing each individual piece and then seeing if it would fit with the whole system. 
 

@@ -77,7 +77,7 @@ This is the final pump we desided on, we got it from disasembling a small fishta
 
 <img src="https://github.com/cprocino/Aquaponics/assets/71406784/c0a0b5c2-0847-4fc3-a14b-1832fafcfa8e" height="250">
  
- this is the pile of unused or discarded matirials, stars of the show include two valves ordered from amazon that needed far more presure than we had and  dozens of feet od tubing that turned out to be useless. 
+ this is the pile of unused or discarded matirials, stars of the show include two valves ordered from amazon that needed far more presure than we had and  dozens of feet of tubing that turned out to be useless. 
 
 
 

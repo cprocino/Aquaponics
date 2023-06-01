@@ -81,6 +81,17 @@ this is the whole project assembled with out the water or plants.
 
 ## Wiring 
 
+This is our wiring, it is not overly complex but it gets the job done:
+
+
+<img src="https://github.com/cprocino/Aquaponics/assets/71406784/ab2396e1-eb2b-4488-9088-078385f6d8b5" height="350">
+
+
+
+
+<img src="https://github.com/cprocino/Aquaponics/assets/71406784/e2b536a0-490c-4253-8386-be21ea5720ce" height="350">
+
+
 
   
 

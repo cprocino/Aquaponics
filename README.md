@@ -67,7 +67,11 @@ this is the whole project assembled with out the water or plants.
 ## code
 For our code we had two renditions, one was a simplistic non-PID version that kindof worked it is as follows:
 
+
+
 the other was the PID that was in our final version it is as follows:
+
+
 
 
 ## reflection  

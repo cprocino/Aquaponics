@@ -65,9 +65,14 @@ this is the whole project assembled with out the water or plants.
   
 
 ## code
+For our code we had two renditions, one was a simplistic non-PID version that kindof worked it is as follows:
+
+the other was the PID that was in our final version it is as follows:
 
 
 ## reflection  
+
+This project was interesting in that no single part of it was extremely difficult but we needed to learn many different systems before we could complete the project; There was the Pumps that we needed pair with the right valves so that we could properly create the final flow system, the PID code that we need to familiarize ourselves with and the ultrasonic sensors that we were told didn't work on water(they do). A lot of the difficulty of this project was learing each individual piece and then seeing if it would fit with the whole system. 
 
    
 

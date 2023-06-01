@@ -80,6 +80,8 @@ This is the final pump we desided on, we got it from disasembling a small fishta
  this is the pile of unused or discarded matirials, stars of the show include two valves ordered from amazon that needed far more presure than we had and  dozens of feet of tubing that turned out to be useless. 
 
 
+<img src="https://github.com/Ncrawfo72/aquaponics/blob/main/images/aquaponics%20working.gif" height="450">
+
 
 
 ## Wiring 

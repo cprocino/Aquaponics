@@ -124,7 +124,9 @@ this is a video of it working.
 This is our wiring, it is not overly complex but it gets the job done:
 
 
-<img src="https://github.com/cprocino/Aquaponics/assets/71406784/ab2396e1-eb2b-4488-9088-078385f6d8b5" height="350">
+<img src="https://github.com/cprocino/Aquaponics/assets/71406784/ab2396e1-eb2b-4488-9088-078385f6d8b5" height="400">
+
+This is our white board wiring diagram, some 
 
 
 
@@ -140,45 +142,45 @@ This is our wiring, it is not overly complex but it gets the job done:
 
 
 this was the PID that code is in our final version is as follows:
+~~~python
+   //*
+   chris and nixon
+   jun 1 2023
+   this code is for an aquaponics PID system
+   *//
 
-    //*
-    chris and nixon
-    jun 1 2023
-    this code is for an aquaponics PID system
-    *//
 
+   import digitalio
+   import time
+   import board
+   import adafruit_hcsr04
+   import neopixel
+   from PID_CPY import PID             
 
-    import digitalio
-    import time
-    import board
-    import adafruit_hcsr04
-    import neopixel
-    from PID_CPY import PID             
+   print(" hey ")  #this was an earlier test to test if are code was working
+   sonar = adafruit_hcsr04.HCSR04(trigger_pin=board.D3, echo_pin=board.D2)    #our pins for are ultrasonic sensor
+   Kaz = neopixel.NeoPixel(board.NEOPIXEL, 1)   # an homage to kaz who helped on this part of the project  
+   KazOutput = 0   # same thing
+   relaypin = digitalio.DigitalInOut(board.D8)  # relay pin setup 
+   relaypin.direction = digitalio.Direction.OUTPUT # relay pin setup continued 
 
-    print(" hey ")  #this was an earlier test to test if are code was working
-    sonar = adafruit_hcsr04.HCSR04(trigger_pin=board.D3, echo_pin=board.D2)    #our pins for are ultrasonic sensor
-    Kaz = neopixel.NeoPixel(board.NEOPIXEL, 1)   # an homage to kaz who helped on this part of the project  
-    KazOutput = 0   # same thing
-    relaypin = digitalio.DigitalInOut(board.D8)  # relay pin setup 
-    relaypin.direction = digitalio.Direction.OUTPUT # relay pin setup continued 
+   pid = PID( 0.5, -0.1, 0, setpoint = 24)    #where we enter our PID and then set our setpoint distance
+   PID.output_limits = (0, 1)  # our PID was added, as intened, somewhat later into the construction of our project so we aimed for simplicity 
 
-    pid = PID( 0.5, -0.1, 0, setpoint = 24)    #where we enter our PID and then set our setpoint distance
-    PID.output_limits = (0, 1)  # our PID was added, as intened, somewhat later into the construction of our project so we aimed for simplicity 
-
-    while True:
-        try:
-            Hi = pid(sonar.distance)      
-            if Hi == 1 : 
-               relaypin.value = True      #where the value effects if the valve is open or not
-                print("open")
-           else :
-               relaypin.value = False    
-               print("closed")
-           time.sleep(0.1)         #the time our sesnor wait tells it senses again
-       except RuntimeError:
-            print("Retrying!")   #incase the distance found an error it would print retrying on the montior
-       time.sleep(0.1)
-
+   while True:
+       try:
+           Hi = pid(sonar.distance)      
+           if Hi == 1 : 
+              relaypin.value = True      #where the value effects if the valve is open or not
+               print("open")
+          else :
+              relaypin.value = False    
+              print("closed")
+          time.sleep(0.1)         #the time our sesnor wait tells it senses again
+      except RuntimeError:
+           print("Retrying!")   #incase the distance found an error it would print retrying on the montior
+      time.sleep(0.1)
+~~~
 
 Big thanks to Kaz for helping us figure out how PID code works. 
 

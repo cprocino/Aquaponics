@@ -141,6 +141,13 @@ This is our wiring, it is not overly complex but it gets the job done:
 
 this was the PID that code is in our final version is as follows:
 
+    //*
+    chris and nixon
+    jun 1 2023
+    this code is for an aquaponics PID system
+    *//
+
+
     import digitalio
     import time
     import board

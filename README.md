@@ -41,36 +41,36 @@ for the first week after we decided on our project we would create the skeleton 
 the rest of the time we would spend trying to figure out how we would PID the project and how the new valves and pumps could be controlled with arduinos. 
 our initial plan was 
 
-week 1: build the basics of the tank with a pump and the correct tubing and a controllable valve or pump to regulate water level
+* week 1: build the basics of the tank with a pump and the correct tubing and a controllable valve or pump to regulate water level
 
-week 2: tweek pump and valve to maintain water level better(start with hand controls for PID)
+* week 2: tweek pump and valve to maintain water level better(start with hand controls for PID)
 
-week 3: start implementing PID
+* week 3: start implementing PID
 
-week 4-5: PID tuning
+* week 4-5: PID tuning
 
-week 6: finish documentation and add plants
+* week 6: finish documentation and add plants
 
 ### bill of materials 
-1x 20 gallon fish tank
+* 1x 20 gallon fish tank
 
-1x tupperware container
+* 1x tupperware container
 
-4x blocks of wood (for spacing)
+* 4x blocks of wood (for spacing)
 
-1x arduino metro
+* 1x arduino metro
 
-1x ultrasonic sensor
+* 1x ultrasonic sensor
 
-1x battery pack 
+* 1x battery pack 
 
-1x breadboard 
+* 1x breadboard 
 
-1x 12 volt relay           
+* 1x 12 volt relay           
 
-1x 5w submersible pump 
+* 1x 5w submersible pump 
 
-1x 12 volt 3 gpm valve
+* 1x 12 volt 3 gpm valve
 
 
 

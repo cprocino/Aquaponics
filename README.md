@@ -18,15 +18,15 @@ This project was based around the idea of PID and our task was to build a system
 
 ## Planning 
  ### Goal
- our goal was to make a Pid system that keeps the water level of our controlled tank a constant.
+ Our goal was to make a Pid system that keeps the water level of our controlled tank constant.
 
  ### criteria 
- we had to make a PID system and for us that meant PIDing using valves and pumps to keep the water level of a small tank.
+ We had to make a PID system and for us that meant PIDing using valves and pumps to keep the water level of a small tank.
  
   ### success statement
-  This project will be success if the water level is constant enough to keep an aquaponics system afloat (pun intened).  
+  This project will be successful if the water level is constant enough to keep an aquaponics system afloat (pun intended).  
 
-  ### planing documentation
+  ### planning documentation
 our planning was rather simple as the main construction of our project was largely already made. The below pictures are our initial very rough sketch of the basis of our project, it will make much more sense once one views the completed project. The sketchs are faithful to our final project with the exception of the monitored tank being suspended instead of laying on some wood on the bottom 
 
 <img src="https://github.com/cprocino/Aquaponics/assets/71406784/14a5ad63-bd11-4430-85fb-e59f7401c26c" height="200">
@@ -34,14 +34,14 @@ our planning was rather simple as the main construction of our project was large
 
 <img src="https://github.com/cprocino/Aquaponics/assets/71406784/925c8a53-bd52-4210-a16a-6adc7ba785c8" height="200">
 
-### Schedual 
+### Schedule 
 
 our planning was slightly skewed by our knowledge of our lack of knowledge in PID 
-for the first week after we desided on our project we would create the skeleton of our project using the fish tank and a few other household and lab idems.
+for the first week after we decided on our project we would create the skeleton of our project using the fish tank and a few other household and lab items.
 the rest of the time we would spend trying to figure out how we would PID the project and how the new valves and pumps could be controlled with arduinos. 
-our intitial plan was 
+our initial plan was 
 
-week 1: build the basics of the tank with a pump and the corect tubing and a controlable valve or pump to regulate water level
+week 1: build the basics of the tank with a pump and the correct tubing and a controllable valve or pump to regulate water level
 
 week 2: tweek pump and valve to maintain water level better(start with hand controls for PID)
 
@@ -51,7 +51,7 @@ week 4-5: PID tuning
 
 week 6: finish documentation and add plants
 
-### bill of matierials 
+### bill of materials 
 1x 20 gallon fish tank
 
 1x tupperware container
@@ -70,7 +70,7 @@ week 6: finish documentation and add plants
 
 1x 5w submersible pump 
 
-1x 12 volt 3gpm valve
+1x 12 volt 3 gpm valve
 
 
 
@@ -86,7 +86,7 @@ This is a partial picture of our wiring that shows the most important parts ( se
 
 <img src="https://github.com/cprocino/Aquaponics/assets/71406784/e2a363ca-2033-448c-b5bb-e4b3e986a802" height="300">
 
-This is the board we cut out in order fo make this a viable system for Hydro/aquaponics, it allows us to suspend potatos in the water and lets them grow. 
+This is the board we cut out in order to make this a viable system for Hydro/aquaponics, it allows us to suspend potatoes in the water and lets them grow. 
 
 <img src="https://github.com/cprocino/Aquaponics/assets/71406784/a56aafc4-da36-4c78-8105-d22c0ad17798" height="300">
 
@@ -102,16 +102,16 @@ this is our final pump, the one we first used was to strong and the valve could 
 
 <img src="https://github.com/cprocino/Aquaponics/assets/71406784/ceef106a-32a8-4821-ae7c-09107d3ca763" height="250">
 
-this is the whole project assembled with out the water or plants. 
+This is the whole project assembled without the water or plants. 
 
 <img src="https://github.com/cprocino/Aquaponics/assets/71406784/45a71b2f-20c6-462a-8690-de35b9570bf4" height="250">
 
-This is the final pump we desided on, we got it from disasembling a small fishtank filter 
+This is the final pump we decided on, we got it from disassembling a small fish tank filter 
 
 
 <img src="https://github.com/cprocino/Aquaponics/assets/71406784/c0a0b5c2-0847-4fc3-a14b-1832fafcfa8e" height="250">
  
- this is the pile of unused or discarded matirials, stars of the show include two valves ordered from amazon that needed far more presure than we had and  dozens of feet of tubing that turned out to be useless. 
+ this is the pile of unused or discarded materials, stars of the show include two valves ordered from amazon that needed far more pressure than we had and  dozens of feet of tubing that turned out to be useless. 
 
 
 <img src="https://github.com/Ncrawfo72/aquaponics/blob/main/images/aquaponics%20working.gif" height="450">
@@ -150,13 +150,13 @@ this was the PID that code is in our final version is as follows:
 
     print(" hey ")  #this was an earlier test to test if are code was working
     sonar = adafruit_hcsr04.HCSR04(trigger_pin=board.D3, echo_pin=board.D2)    #our pins for are ultrasonic sensor
-    Kaz = neopixel.NeoPixel(board.NEOPIXEL, 1)     
-    KazOutput = 0
-    relaypin = digitalio.DigitalInOut(board.D8)
-    relaypin.direction = digitalio.Direction.OUTPUT
+    Kaz = neopixel.NeoPixel(board.NEOPIXEL, 1)   # an homage to kaz who helped on this part of the project  
+    KazOutput = 0   # same thing
+    relaypin = digitalio.DigitalInOut(board.D8)  # relay pin setup 
+    relaypin.direction = digitalio.Direction.OUTPUT # relay pin setup continued 
 
     pid = PID( 0.5, -0.1, 0, setpoint = 24)    #where we enter our PID and then set our setpoint distance
-    PID.output_limits = (0, 1)
+    PID.output_limits = (0, 1)  # our PID was added, as intened, somewhat later into the construction of our project so we aimed for simplicity 
 
     while True:
         try:
@@ -173,11 +173,15 @@ this was the PID that code is in our final version is as follows:
        time.sleep(0.1)
 
 
+Big thanks to Kaz for helping us figure out how PID code works. 
+
 
 ## Reflection  
 
-This project was interesting in that no single part of it was extremely difficult but we needed to learn many different systems before we could complete the project; There was the Pumps that we needed pair with the right valves so that we could properly create the final flow system, the PID code that we need to familiarize ourselves with and the ultrasonic sensors that we were told didn't work on water(they do). A lot of the difficulty of this project was learing each individual piece and then seeing if it would fit with the whole system. 
+This project was interesting in that no single part of it was extremely difficult but we needed to learn many different systems before we could complete the project; There was the Pumps that we needed pair with the right valves so that we could properly create the final flow system, the PID code that we need to familiarize ourselves with and the ultrasonic sensors that we were told didn't work on water(they do). A lot of the difficulty of this project was learning each individual piece and then seeing if it would fit with the whole system. 
 
    
 
   
+
+

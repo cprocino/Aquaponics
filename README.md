@@ -18,7 +18,7 @@ This project was based around the idea of PID and our task was to build a system
 
 ## Planning 
  ### Goal
- Our goal was to make a Pid system that keeps the water level of our controlled tank constant.
+ Our goal was to make a small water tank hold a constant water level so that we could grow plants inside. 
 
  ### criteria 
  We had to make a PID system and for us that meant PIDing using valves and pumps to keep the water level of a small tank.

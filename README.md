@@ -126,7 +126,7 @@ This is our wiring, it is not overly complex but it gets the job done:
 
 <img src="https://github.com/cprocino/Aquaponics/assets/71406784/ab2396e1-eb2b-4488-9088-078385f6d8b5" height="400">
 
-This is our white board wiring diagram, some 
+This is our white board wiring diagram, some comments are; the sensor is a hcsor04 ultrasonic sensor and valve is a needed 12 volts to open. 
 
 
 

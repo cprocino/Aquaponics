@@ -187,7 +187,7 @@ Big thanks to Kaz for helping us figure out how PID code works.
 
 ## Reflection  
 
-This project was interesting in that no single part of it was extremely difficult but we needed to learn many different systems before we could complete the project; There was the Pumps that we needed pair with the right valves so that we could properly create the final flow system, the PID code that we need to familiarize ourselves with and the ultrasonic sensors that we were told didn't work on water(they do). A lot of the difficulty of this project was learning each individual piece and then seeing if it would fit with the whole system. 
+A lot of the difficulty of this project was learning each individual piece and then seeing if it would fit with the whole system. For future reference I would; one: make sure the valve we used didn't need a threshold water pressure, two: make sure the valves flow rate can keep up with the pump, three: design the project with PID in mind so that the last week isn't spent trying to intigrate the PID code and four: ultra sonic sensor do work on water. The sulutions to these problems differ from stupid common sense to ignorance of the exact specs of something ordered from amazon, So make sure your output rate can be more than the inlet, intigrate and build around PID code from the start and Plan Plan Plan. oui oui baggette 
 
    
 
